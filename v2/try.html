@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Filters</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+        .pressed {
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button id="filter-graded" class="filter-btn">Graded</button>
+        <button id="filter-photochromic" class="filter-btn">Photochromic</button>
+        <button id="filter-sunglasses" class="filter-btn">Sunglasses</button>
+    </div>
+    <div>
+        <button id="filter-trending" class="filter-btn">Trending</button>
+        <button id="filter-latest" class="filter-btn">Latest</button>
+        <button id="filter-featured" class="filter-btn">Featured</button>
+    </div>
+
+    <div class="item graded trending">Graded Trending Item</div>
+    <div class="item graded latest">Graded Latest Item</div>
+    <div class="item photochromic trending">Photochromic Trending Item</div>
+    <div class="item photochromic featured">Photochromic Featured Item</div>
+    <div class="item sunglasses trending">Sunglasses Trending Item</div>
+    <div class="item sunglasses latest">Sunglasses Latest Item</div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const items = document.querySelectorAll('.item');
+
+            const activeFilters = {
+                categories: [],
+                tags: []
+            };
+
+            function updateFilters(filterType, filterValue, add) {
+                if (add) {
+                    activeFilters[filterType].push(filterValue);
+                } else {
+                    activeFilters[filterType] = activeFilters[filterType].filter(f => f !== filterValue);
+                }
+            }
+
+            function applyFilters() {
+                items.forEach(item => {
+                    const itemCategories = item.className.split(' ');
+                    const shouldShow = (
+                        (activeFilters.categories.length === 0 || activeFilters.categories.some(category => itemCategories.includes(category))) &&
+                        (activeFilters.tags.length === 0 || activeFilters.tags.some(tag => itemCategories.includes(tag)))
+                    );
+                    item.classList.toggle('hidden', !shouldShow);
+                });
+            }
+
+            filterBtns.forEach(button => {
+                button.addEventListener('click', function() {
+                    const filterValue = button.id.split('-')[1];
+                    const filterType = ['graded', 'photochromic', 'sunglasses'].includes(filterValue) ? 'categories' : 'tags';
+                    const isActive = button.classList.toggle('pressed');
+
+                    updateFilters(filterType, filterValue, isActive);
+                    applyFilters();
+                });
+            });
+        });
+    </script>
+</body>
+</html>

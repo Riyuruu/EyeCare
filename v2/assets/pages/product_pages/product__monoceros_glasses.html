@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EyeCare | Monoceros</title>
+    
+    <link rel="stylesheet" href="../../css/grey_style_sheet.css">
+    <link rel="stylesheet" href="../../css/navigation.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../css/product.css">
+
+    <link rel="stylesheet" href="../../css/product_pages/product__page.css">
+
+    <link rel="shortcut icon" href="../../image/logo.svg" type="image/x-icon">
+
+
+
+    <script src="https://kit.fontawesome.com/56087ce299.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="header-wrap">    
+                <a href="../../../index.html" class="logo"> <img src="../../image/logo.svg" alt="EyeCare"> </a>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="../../../index.html">Home</a></li>
+                        <li><a href="../../pages/Product.html">Products</a></li>
+                        <li><a href="../../pages/Customer-Service.html">Services</a></li>
+                    </ul>
+                </nav>
+                <div>
+                    <i class="fas fa-shopping-cart" onclick="location.href='../../pages/Cart.html'"></i>
+                    <i class="fas fa-user" onclick="location.href='../../pages/Account.html'"></a></i>
+                </div>
+            </div>
+        </header>
+
+        <section class="product_page">
+            <div class="product_container">
+                <div class="product__image">
+                    <img src="../../image/look-11.png" alt="Monoceros Glasses">
+                </div>
+
+                <div class="product__info">
+                    <h1>Monoceros</h1>
+                    <hr>
+                    <span class="product__gradelist">
+                        <label for="grade">Enter Grade: </label>
+                        <input type="text" name="grade" id="grade">
+                    </span>
+                    <hr>
+                    <span>
+                        <ul>
+                            <li>Frame: Round</li>
+                            <li>Material: Plastic</li>
+                            <li>Color: Black </li>
+                        </ul>
+                    </span>
+                    <hr>
+                    <h2>$39.99</h2>
+                    <span class="product__action">
+                        <button class="purchase" onclick="location.href='../../pages/Cart.html'">Purchase</button>
+                        <button class="add_to_cart" onclick="location.href='../../pages/Cart.html'"><i class="fa-solid fa-cart-plus"></i></button>
+                    </span>
+                </div>
+            </div>
+
+            <h2 class="product__similar">Similar Products</h2>
+
+            <section class="product__carousel">
+                <div class="product__carousel-card">
+                    <img src="../../image/look-1.png" alt="Oval Glasses">
+                    <div class="carousel-card__desc">
+                        <h3>Aries</h3>
+                        <p>$49.99</p>
+                    </div>
+                </div>
+                <div class="product__carousel-card">
+                    <img src="../../image/look-2.png" alt="Round Glasses">
+                    <div class="carousel-card__desc">
+                        <h3>Pegasus</h3>
+                        <p>$49.99</p>
+                    </div>
+                </div>
+                <div class="product__carousel-card">
+                    <img src="../../image/look-3.png" alt="Yellow Glasses">
+                    <div class="carousel-card__desc">
+                        <h3>Leo</h3>
+                        <p>$59.99</p>
+                    </div>
+                </div>
+                <div class="product__carousel-card">
+                    <img src="../../image/look-4.png" alt="Oval Glasses">
+                    <div class="carousel-card__desc">
+                        <h3>Orion</h3>
+                        <p>$39.99</p>
+                    </div>
+                </div>
+                <div class="product__carousel-card">
+                    <img src="../../image/look-5.png" alt="Oval Glasses">
+                    <div class="carousel-card__desc">
+                        <h3>Draco</h3>
+                        <p>$39.99</p>
+                    </div>
+                </div>
+                <div class="product__carousel-card">
+                    <img src="../../image/look-6.png" alt="ROund Glasses">
+                    <div class="carousel-card__desc">
+                        <h3>Cassiopeia</h3>
+                        <p>$49.99</p>
+                    </div>
+                </div>
+                <div class="product__carousel-card">
+                    <img src="../../image/look-7.png" alt="Yellow Glasses">
+                    <div class="carousel-card__desc">
+                        <h3>Aquila</h3>
+                        <p>$45.99</p>
+                    </div>
+                </div>
+                <div class="product__carousel-card">
+                    <img src="../../image/look-8.png" alt="Oval Glasses">
+                    <div class="carousel-card__desc">
+                        <h3>Lyra</h3>
+                        <p>$49.99</p>
+                    </div>
+                </div>
+                <div class="product__carousel-card" onhover="onHover()">
+                    <img src="../../image/look-1.png" alt="Oval Glasses">
+                    <div class="carousel-card__desc">
+                        <h3>Cygnus</h3>
+                        <p>$49.99</p>
+                    </div>
+                </div>
+                <div class="product__carousel-card">
+                    <img src="../../image/look-2.png" alt="ROund Glasses">
+                    <div class="carousel-card__desc">
+                        <h3>Puppis</h3>
+                        <p>$69.99</p>
+                    </div>
+                </div>
+                <div class="product__carousel-card">
+                    <img src="../../image/look-3.png" alt="Yellow Glasses">
+                    <div class="carousel-card__desc">
+                        <h3>Octans</h3>
+                        <p>$39.99</p>
+                    </div>
+                </div>
+                <div class="product__carousel-card">
+                    <img src="../../image/look-1.png" alt="Oval Glasses">
+                    <div class="carousel-card__desc">
+                        <h3>Sextans</h3>
+                        <p>$49.99</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section class="footer-wrap">
+            <section class="footer">
+                <div class="footer_split">
+                    <h1>EyeCare</h1>
+                </div>
+                <div class="footer_split">
+                    <ul>
+                        <h3>Customer Service</h3>
+                        <li><a href="../../pages/Customer-Service.html#contact">Contact Us</a></li>
+                        <li><a href="../../pages/Customer-Service.html">Help Center</a></li>
+                        <li><a href="../../pages/Customer-Service.html#faqs">FAQS</a></li>
+                    </ul>
+                    <ul>
+                        <h3>About EyeCare</h3>
+                        <li><a href="../../pages/Customer-Service.html#about">About Us</a></li>
+                        <li><a href="../../pages/Customer-Service.html#policies">Policies</a></li>
+                        <li><a href="#" id="terms-link">Terms and Conditions</a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="copyright">
+                <p>© 2024 EYECARE PHILIPPINES&nbsp;|&nbsp;&nbsp;</p>
+                <p class="copyright-cont">+63 966 800 0626</p>
+            </section>
+        </section>
+    </div>
+
+    <script>
+        document.getElementById('terms-link').addEventListener('click', function() {
+            const link = document.createElement('a');
+            link.href = '../../files/terms-and-conditions.txt';  // Update the path
+            link.download = 'terms-and-conditions.txt';
+            link.style.display = 'none';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        });
+    </script>
+</body>
+</html>

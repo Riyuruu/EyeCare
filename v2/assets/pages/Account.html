@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EyeCare | Account</title>
+
+    <link rel="stylesheet" href="../css/grey_style_sheet.css">
+    <link rel="stylesheet" href="../css/navigation.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/account.css">
+
+    <script src="https://kit.fontawesome.com/56087ce299.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    
+    <div class="wrapper">
+        <header> 
+            <div class="header-wrap">    
+                <a href="../../index.html" class="logo"> <img src="../image/logo.svg" alt="EyeCare"> </a>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="../pages/Product.html">Products</a></li>
+                        <li><a href="../pages/Customer-Service.html">Services</a></li>
+                    </ul>
+                </nav>
+                <div>
+                    <i class="fas fa-shopping-cart" onclick="location.href='../pages/Cart.html'"></i>
+                    <i class="fas fa-user" onclick="location.href='../pages/Account.html'"></a></i>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <h1>My Account</h1>
+            <div class="account-info">
+                <div class="account-details">
+                    <h2>Account Details</h2>
+                    <p><strong>Name:</strong> Jaelord</p>
+                    <p><strong>Email:</strong> Jaelord@example.com</p>
+                    <p><strong>Phone:</strong> +639461364596</p>
+                    <a href="Account.html" class="button">Edit Profile</a>
+                </div>
+                <div class="account-actions">
+                    <h2>Account Actions</h2>
+                    <a href="Account.html" class="button">Change Password</a>
+                    <a href="Account.html" class="button">Delete Account</a>
+                    <a href="Account.html" class="button">Logout</a>
+                </div>
+            </div>
+            
+            <div class="order-history">
+                <h2>Order History</h2>
+                <div class="order">
+                    <p><strong>Order ID:</strong> #12345</p>
+                    <p><strong>Date:</strong> January 1, 2024</p>
+                    <p><strong>Total:</strong> $99.99</p>
+                    <a href="Account.html" class="button">View Details</a>
+                </div>
+                <div class="order">
+                    <p><strong>Order ID:</strong> #67890</p>
+                    <p><strong>Date:</strong> February 15, 2024</p>
+                    <p><strong>Total:</strong> $49.99</p>
+                    <a href="Account.html" class="button">View Details</a>
+                </div>
+            </div>
+            
+            <div class="saved-addresses">
+                <h2>Saved Addresses</h2>
+                <div class="address">
+                    <p><strong>Name:</strong> Home</p>
+                    <p><strong>Address:</strong> 123 Main St, City, State, Zip</p>
+                    <a href="Account.html" class="button">Edit Address</a>
+                    <a href="Account.html" class="button">Delete Address</a>
+                </div>
+                <div class="address">
+                    <p><strong>Name:</strong> Office</p>
+                    <p><strong>Address:</strong> 456 Business Ave, City, State, Zip</p>
+                    <a href="Account.html" class="button">Edit Address</a>
+                    <a href="Account.html" class="button">Delete Address</a>
+                </div>
+                <a href="Account.html" class="button">Add New Address</a>
+            </div>
+            
+        </div>
+        <section class="footer-wrap">
+            <section class="footer">
+                <div class="footer_split">
+                    <h1>EyeCare</h1>
+                </div>
+                <div class="footer_split">
+                    <ul>
+                        <h3>Customer Service</h3>
+                        <li><a href="../pages/Customer-Service.html#contact">Contact Us</a></li>
+                        <li><a href="../pages/Customer-Service.html">Help Center</a></li>
+                        <li><a href="../pages/Customer-Service.html#faqs">FAQS</a></li>
+                    </ul>
+                    <ul>
+                        <h3>About EyeCare</h3>
+                        <li><a href="../pages/Customer-Service.html#about">About Us</a></li>
+                        <li><a href="../pages/Customer-Service.html#policies">Policies</a></li>
+                        <li><a href="#" id="terms-link">Terms and Conditions</a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="copyright">
+                <p>© 2024 EYECARE PHILIPPINES&nbsp;|&nbsp;&nbsp;</p>
+                <p class="copyright-cont">+63 966 800 0626</p>
+            </section>
+        </section>
+    </div>
+
+    <script>
+        document.getElementById('terms-link').addEventListener('click', function() {
+            const link = document.createElement('a');
+            link.href = '../files/terms-and-conditions.txt';  // Update the path
+            link.download = 'terms-and-conditions.txt';
+            link.style.display = 'none';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        });
+    </script>
+    <script src="../js/account.js"></script>
+</body>
+</html>
