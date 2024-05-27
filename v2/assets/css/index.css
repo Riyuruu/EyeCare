@@ -178,6 +178,13 @@ button {
     justify-content: center;
     align-items: center;
     gap: 1rem;
+
+    transition: scale 0.2s ease-in-out;
+}
+
+.prod-card:hover {
+    cursor: pointer;
+    scale: 1.025;
 }
 
 .prod-panel img {

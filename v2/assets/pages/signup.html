@@ -14,21 +14,11 @@
                 <h1 class="form-title">Create Account</h1>
                 <span class="form-subtitle">or use your email for registration</span>
                 <div class="input_fields">    
-                    <input type="text" placeholder="Name" />
-                    <input type="email" placeholder="Email" />
-                    <input type="password" placeholder="Password" />
+                    <input type="text" placeholder="Name"  required/>
+                    <input type="email" placeholder="Email"  required/>
+                    <input type="password" placeholder="Password" required/>
                 </div>
-                <button onclick="location.href='../../index.html'">Sign Up</button>
-            </form>
-        </div>
-        <div class="form-container sign-in-container">
-            <form action="#">
-                <h1>Sign in</h1>
-                <span>or use your account</span>
-                <input type="email" placeholder="Email" />
-                <input type="password" placeholder="Password" />
-                <a href="#">Forgot your password?</a>
-                <button onclick="location.href='../../index.html'">Sign In</button>
+                <button type="submit" id="submit_signup" disabled>Sign Up</button>
             </form>
         </div>
         <div class="overlay-container">
@@ -36,16 +26,11 @@
                 <div class="overlay-panel overlay-right">
                     <h1>Welcome Back!</h1>
                     <p>To keep connected with us please login with your personal info</p>
-                    <button class="ghost" id="signIn" onclick="location.href='../../index.html'">Log In</button>
-                </div>
-                <div class="overlay-panel overlay-left">
-                    <h1>Hello, Friend!</h1>
-                    <p>Enter your personal details and start j  ourney with us</p>
-                    <button class="ghost" id="signUp" onclick="location.href='../../index.html'">Log In</button>
+                    <button class="ghost" id="signIn" onclick="location.href='login.html'">Sign In</button>
                 </div>
             </div>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script src="../js/signup.js"></script>
 </body>
 </html>

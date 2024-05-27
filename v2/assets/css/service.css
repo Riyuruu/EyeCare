@@ -232,7 +232,7 @@
 }
 
 .contact-section {
-    background: var(--secondary-light-color);
+    background: var(--tertiary-color);
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -288,7 +288,7 @@
 }
 
 .contact-section form button:hover {
-    background-color: var(--tertiary-color);
+    background-color: var(--secondary-light-color);
     color: var(--tertiary-light-color);
 }
 
