@@ -3,6 +3,8 @@
     max-width: 80rem;
     height: auto;
     margin-inline: auto;
+
+    margin-top: 10rem;
 }
 
 .product__title {

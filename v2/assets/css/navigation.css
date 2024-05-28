@@ -1,6 +1,12 @@
 header {
+    width: 100%;
     min-height: 5rem;
     background-color: var(--secondary-color);
+
+    top: 0;
+
+    position: fixed;
+    z-index: 1000;
 }
 
 .header-wrap {

@@ -1,6 +1,8 @@
 .product_page {
     max-width: 100%;
     height: auto;
+
+    margin-top: 10rem;
 }
 
 .product_container {

@@ -3,6 +3,7 @@ button {
 }
 
 .hero {
+    margin-top: 5.5rem;
     display: block;
     max-width: 100%;
     height: 100%;
