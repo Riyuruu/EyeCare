@@ -1,6 +1,6 @@
 
     document.addEventListener('DOMContentLoaded', function () {
-        var swiper = new Swiper('.swiper-container', {
+        var swiper = new swiper('.swiper-container', {
             slidesPerView: 'auto',
             spaceBetween: 20,
             centeredSlides: true,

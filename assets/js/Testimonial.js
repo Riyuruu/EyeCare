@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Initialize Swiper
-    var swiper = new Swiper('.testimonial-carousel', {
+    var swiper = new swiper('.testimonial-carousel', {
         slidesPerView: 'auto',
         spaceBetween: 20,
         centeredSlides: true,
