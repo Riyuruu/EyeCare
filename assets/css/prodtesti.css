@@ -74,6 +74,7 @@ h2 {
     text-align: center;
     position: relative;
     transition: transform 0.3s ease, opacity 0.3s ease; /* Added opacity transition */
+    cursor: pointer;
 }
 
 .testimonial:hover {
