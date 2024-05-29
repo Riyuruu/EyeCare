@@ -11,14 +11,14 @@
     gap: 1rem;
     justify-items: center;
     padding: 5rem;
-    background-color: #e1e1e1;
+    background-color: #ffffff;
     max-width: 80rem;
     width: 100%;
     height: auto;
     margin-inline: auto;
     margin-block: 5rem;
     border-radius: 25px;
-    box-shadow: 0 5px 2px 2px rgba(0, 0, 0, 0.616);
+    box-shadow: 0 0px 50px 5px var(--tertiary-color);
 }
 
 .product_container img {
