@@ -18,7 +18,7 @@
     margin-inline: auto;
     margin-block: 5rem;
     border-radius: 25px;
-    box-shadow: 0 0px 50px 5px var(--tertiary-color);
+    box-shadow: 0 0px 25px 2px var(--tertiary-color);
 }
 
 .product_container img {
