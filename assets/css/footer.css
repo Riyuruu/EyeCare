@@ -72,7 +72,7 @@
 }
 
 @media screen and (max-width: 768px) {
-    
+
 
     .footer {
         display: flex;
@@ -81,5 +81,5 @@
         align-items: center;
         gap: 5rem;
     }
-    
+
 }

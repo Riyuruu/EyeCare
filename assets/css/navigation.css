@@ -18,7 +18,9 @@ header {
     margin-inline: 3rem;
 }
 
-header a, header i, header li {
+header a,
+header i,
+header li {
     font-family: var(--body-font);
     list-style: none;
     text-decoration: none;
@@ -28,7 +30,10 @@ header a, header i, header li {
     transition: scale 0.1s ease-in-out;
 }
 
-header a:hover, header li:hover, header i:hover, header img:hover {
+header a:hover,
+header li:hover,
+header i:hover,
+header img:hover {
     color: var(--tertiary-light-color);
     cursor: pointer;
 }

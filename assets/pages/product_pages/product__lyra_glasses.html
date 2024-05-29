@@ -1,264 +1,333 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EyeCare | Lyra</title>
-    
-    <link rel="stylesheet" href="../../css/grey_style_sheet.css">
-    <link rel="stylesheet" href="../../css/navigation.css">
-    <link rel="stylesheet" href="../../css/footer.css">
-    <link rel="stylesheet" href="../../css/product.css">
-    <link rel="stylesheet" href="../../css/prodtesti.css">
-    <link rel="stylesheet" href="../../css/product_pages/product__page.css">
 
-    <link rel="shortcut icon" href="../../image/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../../css/grey_style_sheet.css" />
+    <link rel="stylesheet" href="../../css/navigation.css" />
+    <link rel="stylesheet" href="../../css/footer.css" />
+    <link rel="stylesheet" href="../../css/product.css" />
+    <link rel="stylesheet" href="../../css/prodtesti.css" />
+    <link rel="stylesheet" href="../../css/product_pages/product__page.css" />
 
+    <link rel="shortcut icon" href="../../image/logo.svg" type="image/x-icon" />
 
-
-    <script src="https://kit.fontawesome.com/56087ce299.js" crossorigin="anonymous"></script>
-
-</head>
-<body>
+    <script
+      src="https://kit.fontawesome.com/56087ce299.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <div class="wrapper">
-        <header>
-            <div class="header-wrap">    
-                <a href="../../../index.html" class="logo"> <img src="../../image/logo.svg" alt="EyeCare"> </a>
-                <nav>
-                    <ul class="nav-links">
-                        <li><a href="../../../index.html">Home</a></li>
-                        <li><a href="../../pages/Product.html">Products</a></li>
-                        <li><a href="../../pages/Customer-Service.html">Services</a></li>
-                    </ul>
-                </nav>
-                <div>
-                    <i class="fas fa-shopping-cart" onclick="location.href='../../pages/Cart.html'"></i>
-                    <i class="fas fa-user" onclick="location.href='../../pages/Account.html'"></a></i>
-                </div>
+      <header>
+        <div class="header-wrap">
+          <a href="../../../index.html" class="logo">
+            <img src="../../image/logo.svg" alt="EyeCare" />
+          </a>
+          <nav>
+            <ul class="nav-links">
+              <li><a href="../../../index.html">Home</a></li>
+              <li><a href="../../pages/Product.html">Products</a></li>
+              <li><a href="../../pages/Customer-Service.html">Services</a></li>
+            </ul>
+          </nav>
+          <div>
+            <i
+              class="fas fa-shopping-cart"
+              onclick="location.href='../../pages/Cart.html'"
+            ></i>
+            <i
+              class="fas fa-user"
+              onclick="location.href='../../pages/Account.html'"
+            ></i>
+          </div>
+        </div>
+      </header>
+
+      <section class="product_page">
+        <div class="product_container">
+          <div class="product__image">
+            <img src="../../image/look-8.png" alt="Lyra Glasses" />
+
+            <div class="product__description">
+              <h3>Description:</h3>
+              <p>
+                "Opt for eco-friendly eyeglasses made from sustainable
+                materials. These frames offer both style and a commitment to
+                environmental responsibility."
+              </p>
             </div>
-        </header>
+          </div>
 
-        <section class="product_page">
-            <div class="product_container">
-                <div class="product__image">
-                    <img src="../../image/look-8.png" alt="Lyra Glasses">
-        
-                    <div class="product__description">
-                        <h3>Description:</h3>
-                        <p>"Opt for eco-friendly eyeglasses made from sustainable materials. These frames offer both style and a commitment to environmental responsibility."
-                        </p>
-                    </div>
-                </div>
+          <div class="product__info">
+            <h1>Lyra</h1>
+            <hr />
+            <span class="product__gradelist">
+              <label for="grade">Enter Grade: </label>
+              <input type="text" name="grade" id="grade" />
+            </span>
+            <hr />
+            <span>
+              <ul>
+                <li>Frame: Rectangle</li>
+                <li>Material: Plastic</li>
+                <li>Color: Black</li>
+              </ul>
+            </span>
+            <hr />
+            <h2>$39.99</h2>
+            <span class="product__action">
+              <button
+                class="purchase"
+                onclick="location.href='../../pages/Cart.html'"
+              >
+                Purchase
+              </button>
+              <button
+                class="add_to_cart"
+                onclick="location.href='../../pages/Cart.html'"
+              >
+                <i class="fa-solid fa-cart-plus"></i>
+              </button>
+            </span>
+          </div>
+        </div>
 
-                <div class="product__info">
-                    <h1>Lyra</h1>
-                    <hr>
-                    <span class="product__gradelist">
-                        <label for="grade">Enter Grade: </label>
-                        <input type="text" name="grade" id="grade">
-                    </span>
-                    <hr>
-                    <span>
-                        <ul>
-                            <li>Frame: Rectangle</li>
-                            <li>Material: Plastic</li>
-                            <li>Color: Black </li>
-                        </ul>
-                    </span>
-                    <hr>
-                    <h2>$39.99</h2>
-                    <span class="product__action">
-                        <button class="purchase" onclick="location.href='../../pages/Cart.html'">Purchase</button>
-                        <button class="add_to_cart" onclick="location.href='../../pages/Cart.html'"><i class="fa-solid fa-cart-plus"></i></button>
-                    </span>
+        <section class="testimonial-section">
+          <div class="container">
+            <h2>What our customers say</h2>
+            <div class="testimonial-carousel swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide testimonial">
+                  <div class="testimonial-text">
+                    "Impressed by the commitment to sustainability! These
+                    glasses look great and feel even better knowing they're
+                    eco-friendly."
+                  </div>
+                  <div class="testimonial-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                  </div>
+                  <div class="testimonial-rating-number">5 / 5</div>
+                  <div class="testimonial-author">
+                    <img
+                      src="../../image/testimony-avatar-1.jpg"
+                      alt="Customer 1"
+                    />
+                    <p>Hannah Vania</p>
+                  </div>
                 </div>
+                <div class="swiper-slide testimonial">
+                  <div class="testimonial-text">
+                    "I love these eco-friendly glasses! Stylish and sustainable
+                    - it's a win-win!"
+                  </div>
+                  <div class="testimonial-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                  </div>
+                  <div class="testimonial-rating-number">5 / 5</div>
+                  <div class="testimonial-author">
+                    <img
+                      src="../../image/testimony-avatar-2.jpg"
+                      alt="Customer 2"
+                    />
+                    <p>Kit Ashlee</p>
+                  </div>
+                </div>
+                <div class="swiper-slide testimonial">
+                  <div class="testimonial-text">
+                    "Finally, stylish glasses that align with my values! These
+                    eco-friendly frames are a game-changer."
+                  </div>
+                  <div class="testimonial-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                  </div>
+                  <div class="testimonial-rating-number">4 / 5</div>
+                  <div class="testimonial-author">
+                    <img
+                      src="../../image/testimony-avatar-3.jpg"
+                      alt="Customer 3"
+                    />
+                    <p>Carie Jane</p>
+                  </div>
+                </div>
+                <div class="swiper-slide testimonial">
+                  <div class="testimonial-text">
+                    "These glasses make a statement - both in style and
+                    sustainability. Love them!"
+                  </div>
+                  <div class="testimonial-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                  </div>
+                  <div class="testimonial-rating-number">5 / 5</div>
+                  <div class="testimonial-author">
+                    <img
+                      src="../../image/testimony-avatar-4.jpg"
+                      alt="Customer 4"
+                    />
+                    <p>Angela</p>
+                  </div>
+                </div>
+                <div class="swiper-slide testimonial">
+                  <div class="testimonial-text">
+                    "So happy to support eco-conscious brands! These glasses are
+                    stylish, comfortable, and environmentally responsible."
+                  </div>
+                  <div class="testimonial-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                  </div>
+                  <div class="testimonial-rating-number">3 / 5</div>
+                  <div class="testimonial-author">
+                    <img
+                      src="../../image/testimony-avatar-5.jpg"
+                      alt="Customer 5"
+                    />
+                    <p>Joshua</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Navigation buttons -->
+              <div class="swiper-button-next swiper-button-white">
+                <i class="fas fa-chevron-right"></i>
+              </div>
+              <div class="swiper-button-prev swiper-button-white">
+                <i class="fas fa-chevron-left"></i>
+              </div>
+
+              <!-- Pagination -->
+              <div class="swiper-pagination"></div>
+
+              <!-- Move Indicator -->
+              <div class="move-indicator">
+                Swipe <i class="fas fa-long-arrow-alt-left"></i>
+                <i class="fas fa-long-arrow-alt-right"></i>
+              </div>
             </div>
-            
-            <section class="testimonial-section">
-                <div class="container">
-                    <h2>What our customers say</h2>
-                    <div class="testimonial-carousel swiper-container">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide testimonial">
-                                <div class="testimonial-text">
-                                    "Impressed by the commitment to sustainability! These glasses look great and feel even better knowing they're eco-friendly."
-                                </div>
-                                <div class="testimonial-rating">
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                </div>
-                                <div class="testimonial-rating-number">5 / 5</div>
-                                <div class="testimonial-author">
-                                    <img src="../../image/testimony-avatar-1.jpg" alt="Customer 1">
-                                    <p>Hannah Vania</p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide testimonial">
-                                <div class="testimonial-text">
-                                    "I love these eco-friendly glasses! Stylish and sustainable - it's a win-win!"
-                                </div>
-                                <div class="testimonial-rating">
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                </div>
-                                <div class="testimonial-rating-number">5 / 5</div>
-                                <div class="testimonial-author">
-                                    <img src="../../image/testimony-avatar-2.jpg" alt="Customer 2">
-                                    <p>Kit Ashlee</p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide testimonial">
-                                <div class="testimonial-text">
-                                    "Finally, stylish glasses that align with my values! These eco-friendly frames are a game-changer."
-                                </div>
-                                <div class="testimonial-rating">
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star"></span>
-                                </div>
-                                <div class="testimonial-rating-number">4 / 5</div>
-                                <div class="testimonial-author">
-                                    <img src="../../image/testimony-avatar-3.jpg" alt="Customer 3">
-                                    <p>Carie Jane</p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide testimonial">
-                                <div class="testimonial-text">
-                                    "These glasses make a statement - both in style and sustainability. Love them!"
-                                </div>
-                                <div class="testimonial-rating">
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                </div>
-                                <div class="testimonial-rating-number">5 / 5</div>
-                                <div class="testimonial-author">
-                                    <img src="../../image/testimony-avatar-4.jpg" alt="Customer 4">
-                                    <p>Angela</p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide testimonial">
-                                <div class="testimonial-text">
-                                    "So happy to support eco-conscious brands! These glasses are stylish, comfortable, and environmentally responsible."
-                                </div>
-                                <div class="testimonial-rating">
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                </div>
-                                <div class="testimonial-rating-number">3 / 5</div>
-                                <div class="testimonial-author">
-                                    <img src="../../image/testimony-avatar-5.jpg" alt="Customer 5">
-                                    <p>Joshua</p>
-                                </div>
-                            </div>
-                        </div>
-                
-                            <!-- Navigation buttons -->
-                            <div class="swiper-button-next swiper-button-white"><i class="fas fa-chevron-right"></i></div>
-                            <div class="swiper-button-prev swiper-button-white"><i class="fas fa-chevron-left"></i></div>
-                
-                            <!-- Pagination -->
-                            <div class="swiper-pagination"></div>
-                
-                            <!-- Move Indicator -->
-                            <div class="move-indicator">Swipe <i class="fas fa-long-arrow-alt-left"></i> <i class="fas fa-long-arrow-alt-right"></i></div>
-                        </div>
-                
-                        <!-- Swipe button -->
-                        <div class="swipe-button">
-                            <button id="swipeButton">Swipe for More <i class="fas fa-chevron-right"></i></button>
-                        </div>
-                    </div>
-                </section>
 
-
-            <h2 class="product__similar">Similar Products</h2>
-
-            <section class="product__carousel">
-                <div class="product__carousel-card">
-                    <img src="../../image/look-1.png" alt="Oval Glasses">
-                    <div class="carousel-card__desc">
-                        <h3>Aries</h3>
-                        <p>$49.99</p>
-                    </div>
-                </div>
-                <div class="product__carousel-card">
-                    <img src="../../image/look-2.png" alt="Round Glasses">
-                    <div class="carousel-card__desc">
-                        <h3>Pegasus</h3>
-                        <p>$49.99</p>
-                    </div>
-                </div>
-                <div class="product__carousel-card">
-                    <img src="../../image/look-3.png" alt="Yellow Glasses">
-                    <div class="carousel-card__desc">
-                        <h3>Leo</h3>
-                        <p>$59.99</p>
-                    </div>
-                </div>
-                <div class="product__carousel-card">
-                    <img src="../../image/look-4.png" alt="Oval Glasses">
-                    <div class="carousel-card__desc">
-                        <h3>Orion</h3>
-                        <p>$39.99</p>
-                    </div>
-                </div>
-            </section>
+            <!-- Swipe button -->
+            <div class="swipe-button">
+              <button id="swipeButton">
+                Swipe for More <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
         </section>
 
-        <section class="footer-wrap">
-            <section class="footer">
-                <div class="footer_split">
-                    <h1>EyeCare</h1>
-                </div>
-                <div class="footer_split">
-                    <ul>
-                        <h3>Customer Service</h3>
-                        <li><a href="../../pages/Customer-Service.html#contact">Contact Us</a></li>
-                        <li><a href="../../pages/Customer-Service.html">Help Center</a></li>
-                        <li><a href="../../pages/Customer-Service.html#faqs">FAQS</a></li>
-                    </ul>
-                    <ul>
-                        <h3>About EyeCare</h3>
-                        <li><a href="../../pages/Customer-Service.html#about">About Us</a></li>
-                        <li><a href="../../pages/Customer-Service.html#policies">Policies</a></li>
-                        <li><a href="#" id="terms-link">Terms and Conditions</a></li>
-                    </ul>
-                </div>
-            </section>
-            <section class="copyright">
-                <p>© 2024 EYECARE PHILIPPINES&nbsp;|&nbsp;&nbsp;</p>
-                <p class="copyright-cont">+63 966 800 0626</p>
-            </section>
+        <h2 class="product__similar">Similar Products</h2>
+
+        <section class="product__carousel">
+          <div class="product__carousel-card">
+            <img src="../../image/look-1.png" alt="Oval Glasses" />
+            <div class="carousel-card__desc">
+              <h3>Aries</h3>
+              <p>$49.99</p>
+            </div>
+          </div>
+          <div class="product__carousel-card">
+            <img src="../../image/look-2.png" alt="Round Glasses" />
+            <div class="carousel-card__desc">
+              <h3>Pegasus</h3>
+              <p>$49.99</p>
+            </div>
+          </div>
+          <div class="product__carousel-card">
+            <img src="../../image/look-3.png" alt="Yellow Glasses" />
+            <div class="carousel-card__desc">
+              <h3>Leo</h3>
+              <p>$59.99</p>
+            </div>
+          </div>
+          <div class="product__carousel-card">
+            <img src="../../image/look-4.png" alt="Oval Glasses" />
+            <div class="carousel-card__desc">
+              <h3>Orion</h3>
+              <p>$39.99</p>
+            </div>
+          </div>
         </section>
+      </section>
+
+      <section class="footer-wrap">
+        <section class="footer">
+          <div class="footer_split">
+            <h1>EyeCare</h1>
+          </div>
+          <div class="footer_split">
+            <ul>
+              <h3>Customer Service</h3>
+              <li>
+                <a href="../../pages/Customer-Service.html#contact"
+                  >Contact Us</a
+                >
+              </li>
+              <li>
+                <a href="../../pages/Customer-Service.html">Help Center</a>
+              </li>
+              <li><a href="../../pages/Customer-Service.html#faqs">FAQS</a></li>
+            </ul>
+            <ul>
+              <h3>About EyeCare</h3>
+              <li>
+                <a href="../../pages/Customer-Service.html#about">About Us</a>
+              </li>
+              <li>
+                <a href="../../pages/Customer-Service.html#policies"
+                  >Policies</a
+                >
+              </li>
+              <li><a href="#" id="terms-link">Terms and Conditions</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="copyright">
+          <p>© 2024 EYECARE PHILIPPINES&nbsp;|&nbsp;&nbsp;</p>
+          <p class="copyright-cont">+63 966 800 0626</p>
+        </section>
+      </section>
     </div>
 
     <script>
-        document.getElementById('terms-link').addEventListener('click', function() {
-            const link = document.createElement('a');
-            link.href = '../../files/terms-and-conditions.pdf';  // Update the path
-            link.download = 'terms-and-conditions.pdf';
-            link.style.display = 'none';
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
+      document
+        .getElementById("terms-link")
+        .addEventListener("click", function () {
+          const link = document.createElement("a");
+          link.href = "../../files/terms-and-conditions.pdf"; // Update the path
+          link.download = "terms-and-conditions.pdf";
+          link.style.display = "none";
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
         });
     </script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.9/swiper-bundle.min.js" integrity="sha512-29tJd6dQJas5J8xXs3E0w88y2cDlCm8jsEYtD5ZTtRyY7BK6u0+Rj29pGk3jF0kghco/0P//5t7Y7BKadW4+2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-     <script src="../../js/prodtesti.js"></script>
-</body>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.9/swiper-bundle.min.js"
+      integrity="sha512-29tJd6dQJas5J8xXs3E0w88y2cDlCm8jsEYtD5ZTtRyY7BK6u0+Rj29pGk3jF0kghco/0P//5t7Y7BKadW4+2g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="../../js/prodtesti.js"></script>
+  </body>
 </html>

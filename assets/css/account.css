@@ -80,7 +80,9 @@ body {
     color: #2C2C2C;
 }
 
-.edit-profile, .button, .delete {
+.edit-profile,
+.button,
+.delete {
     display: inline-block;
     padding: 12px 24px;
     background-color: #504170;
@@ -91,11 +93,14 @@ body {
     transition: background-color 0.3s;
 }
 
-.edit-profile:hover, .button:hover, .delete:hover {
+.edit-profile:hover,
+.button:hover,
+.delete:hover {
     background-color: #5C5C5C;
 }
 
-.order, .address {
+.order,
+.address {
     background-color: #ffffff;
     border-radius: 12px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
@@ -103,18 +108,22 @@ body {
     margin-bottom: 30px;
 }
 
-.order p, .address p {
+.order p,
+.address p {
     margin-bottom: 10px;
     color: #2C2C2C;
 }
 
-.order-header, .address-info, .address-actions {
+.order-header,
+.address-info,
+.address-actions {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.order-details, .address-actions {
+.order-details,
+.address-actions {
     margin-top: 10px;
 }
 
@@ -143,6 +152,7 @@ body {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }

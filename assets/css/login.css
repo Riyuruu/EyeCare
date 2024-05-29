@@ -22,7 +22,7 @@ h1 {
 
 h2 {
     text-align: center;
-    font-family: var(--body-font);  
+    font-family: var(--body-font);
 }
 
 p {
@@ -80,7 +80,8 @@ form {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 50px 50px 0; /* Adjusted padding */
+    padding: 50px 50px 0;
+    /* Adjusted padding */
     height: 100%;
     text-align: center;
 }
@@ -178,12 +179,15 @@ input {
 }
 
 @keyframes show {
-    0%, 49.99% {
+
+    0%,
+    49.99% {
         opacity: 0;
         z-index: 1;
     }
 
-    50%, 100% {
+    50%,
+    100% {
         opacity: 1;
         z-index: 5;
     }
@@ -268,4 +272,3 @@ input {
     height: 40px;
     width: 40px;
 }
-    
