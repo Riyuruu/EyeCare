@@ -172,7 +172,7 @@
 }
 
 .faqs-container {
-    width: 80%;
+    width: 80rem;
     height: 100%;
     margin-inline: auto;
 
@@ -192,6 +192,7 @@
 
 .faqs-content {
     font-size: 1.5rem;
+    width: 100%;
     color: var(--primary-color);
     font-family: var(--body-font);
     text-align: left;
@@ -203,7 +204,7 @@
 }
 
 .faqs-btn {
-    width: 80rem;
+    width: 100%;
     font-size: 1.2rem;
     color: var(--primary-color);
     font-family: var(--body-font);
@@ -226,7 +227,7 @@
     margin-block: auto;
     padding: 1rem;
     height: auto;
-    width: 80rem;
+    width: 100%;
     overflow: hidden;
     display: none;
 }
