@@ -1,0 +1,210 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
+    color: #2C2C2C;
+    line-height: 1.6;
+}
+
+.container {
+    width: 95%;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+.account-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #504170;
+    padding: 15px 25px;
+    color: #ffffff;
+    border-radius: 12px;
+}
+
+.account-header h1 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.logout {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.logout:hover {
+    background-color: #5C5C5C;
+}
+
+.account-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.account-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section {
+    border-radius: 12px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease;
+}
+
+.section h2 {
+    font-size: 24px;
+    color: #504170;
+    margin-bottom: 15px;
+}
+
+.info-item {
+    margin-bottom: 15px;
+}
+
+.info-item p {
+    margin-bottom: 5px;
+    color: #2C2C2C;
+}
+
+.edit-profile, .button, .delete {
+    display: block;
+    padding: 12px 24px;
+    background-color: #504170;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.edit-profile:hover, .button:hover, .delete:hover {
+    background-color: #5C5C5C;
+}
+
+.delete {
+    background-color: #E91E63;
+}
+
+.delete:hover {
+    background-color: #F06292;
+}
+
+.order {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.order:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.order-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-right: 20px;
+}
+
+.order-details {
+    flex: 1;
+}
+
+.order-details p {
+    margin-bottom: 10px;
+    color: #2C2C2C;
+}
+
+.address {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.address p {
+    margin-bottom: 10px;
+    color: #2C2C2C;
+}
+
+.add-address {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    background-color: #504170;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 14px 24px;
+    transition: background-color 0.3s;
+}
+
+.add-address:hover {
+    background-color: #5C5C5C;
+}
+
+.add-address i {
+    margin-right: 8px;
+}
+
+.profile-section {
+    text-align: center;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* This makes the photo circular */
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.change-photo {
+    display: inline-block;
+    padding: 8px;
+    background-color: #ffffff;
+    border: 2px solid #504170;
+    border-radius: 50%;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.change-photo i {
+    color: #504170;
+    font-size: 1.2rem;
+}
+
+.change-photo:hover {
+    background-color: #504170;
+    color: #ffffff;
+}
+

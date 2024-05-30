@@ -1,0 +1,258 @@
+/* Import Poppins font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+
+/* Testimonial Section */
+.testimonial-section {
+    background-color: #f0f0f0;
+    padding: 50px 0;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+    position: relative;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333333;
+    font-size: 36px;
+}
+
+/* Testimonial Carousel */
+.testimonial-carousel {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.swiper-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.swiper-slide {
+    scroll-snap-align: start;
+    flex: 0 0 auto;
+    width: 80%;
+    margin-right: 20px;
+    opacity: 0.5; /* Adjusted opacity */
+}
+
+.swiper-slide:last-child {
+    margin-right: 0;
+}
+
+.swiper-slide-active {
+    opacity: 1; /* Active slide full opacity */
+    transition: opacity 0.3s ease; /* Added transition for opacity */
+}
+
+/* Testimonial */
+.testimonial {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 500px;
+    margin: 15px;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Added opacity transition */
+    cursor: pointer;
+}
+
+.testimonial:hover {
+    transform: translateY(-5px);
+}
+
+.testimonial-text {
+    font-size: 18px;
+    color: #333333;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif; /* Updated font-family */
+}
+
+.testimonial-rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.fa-star {
+    color: rgb(80, 66, 112); /* Updated star color */
+    font-size: 24px;
+}
+
+.checked {
+    color: rgb(255, 225, 0); /* Updated checked star color */
+}
+
+.rating-number {
+    margin-left: 5px;
+    font-size: 14px;
+    color: #666666;
+}
+
+/* Testimonial Author */
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonial-author img {
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.testimonial-author p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #666666;
+    font-family: 'Poppins', sans-serif; /* Updated font-family */
+}
+
+/* Swiper Navigation Buttons */
+/* Swiper Navigation Buttons */
+.swiper-button-next,
+.swiper-button-prev {
+    background-color: rgba(80, 66, 112, 0.8);
+    color: #ffffff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background-color: rgba(80, 66, 112, 1);
+}
+
+.swiper-button-next {
+    right: 10px;
+}
+
+.swiper-button-prev {
+    left: 10px;
+}
+
+/* Swiper Pagination */
+.swiper-pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(80, 66, 112, 0.8);
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: rgba(80, 66, 112, 1);
+}
+
+/* Move Indicator */
+.move-indicator {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(80, 66, 112, 0.8);
+    color: #ffffff;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Swipe Button */
+.swipe-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Swipe Button */
+.swipe-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#swipeButton {
+    background-color: rgba(80, 66, 112, 0.8);
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Make the button full width */
+    max-width: 300px; /* Limit maximum width */
+    margin: 0 auto; /* Center horizontally */
+}
+
+#swipeButton:hover {
+    background-color: rgba(80, 66, 112, 1);
+}
+
+#swipeButton i {
+    margin-left: 5px;
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .swiper-button-next,
+    .swiper-button-prev {
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
+    }
+
+    .swiper-button-next {
+        right: 5px;
+    }
+
+    .swiper-button-prev {
+        left: 5px;
+    }
+}
+
