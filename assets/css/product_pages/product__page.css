@@ -1,6 +1,8 @@
 .product_page {
     max-width: 100%;
     height: auto;
+
+    margin-top: 10rem;
 }
 
 .product_container {
@@ -9,14 +11,14 @@
     gap: 1rem;
     justify-items: center;
     padding: 5rem;
-    background-color: #e1e1e1;
+    background-color: #ffffff;
     max-width: 80rem;
     width: 100%;
     height: auto;
     margin-inline: auto;
     margin-block: 5rem;
     border-radius: 25px;
-    box-shadow: 0 5px 2px 2px rgba(0, 0, 0, 0.616);
+    box-shadow: 0 0px 25px 2px var(--tertiary-color);
 }
 
 .product_container img {
@@ -24,13 +26,34 @@
     height: auto;
 }
 
+.product__image {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 2.5rem;
+
+    text-align: justify;
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+    border-radius: 1rem;
+}
+
 .product_container .product__info {
     padding: 2.5rem;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--secondary-light-color);
+    background-color: var(--tertiary-color);
     border-radius: 1rem;
 }
 
@@ -49,8 +72,8 @@
 
 .product__info hr {
     width: 100%;
-    height: 2px;
-    background-color: var(--secondary-color);
+    height: 3px;
+    background-color: var(--primary-color);
 }
 
 .product__info span {
@@ -88,8 +111,8 @@
 .product__action button {
     font-size: 1.5rem;
     font-family: var(--body-font);
-    background-color: var(--secondary-lightest-color);
-    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
     border: none;
     padding: 0.5rem;
     width: 100%;
@@ -98,8 +121,8 @@
 }
 
 .product__action .add_to_cart {
-    background-color: var(--tertiary-color);
-    color: var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
 }
 
 .add_to_cart i:hover {
@@ -151,7 +174,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;  
+    gap: 1rem;
 
     width: 20rem;
     height: 20rem;
@@ -173,17 +196,17 @@
     background-color: var(--secondary-light-color);
     color: var(--primary-color);
     align-content: center;
-    
+
     cursor: pointer;
 
     opacity: 0;
     transition: opacity 0.2s ease-in-out,
-                background-color 0.2s ease-in-out;
+        background-color 0.2s ease-in-out;
 }
 
 .carousel-card__desc:hover {
     opacity: 1;
-    
+
     background-color: rgba(44, 44, 44, 0.6);
 }
 
@@ -205,4 +228,5 @@
     color: var(--secondary-color);
     text-align: center;
     margin-bottom: 3rem;
+    margin-top: 3rem;
 }

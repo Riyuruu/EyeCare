@@ -189,6 +189,10 @@
     display: none;
 }
 
+.pressed {
+    color: var(--tertiary-light-color);
+}
+
 @media screen and (max-width: 1000px) {
     .product__nav {
         margin-bottom: 10rem;

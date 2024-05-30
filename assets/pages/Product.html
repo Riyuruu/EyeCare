@@ -1,298 +1,410 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EyeCare | Product</title>
-    
-    <link rel="stylesheet" href="../css/grey_style_sheet.css">
-    <link rel="stylesheet" href="../css/navigation.css">
-    <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../css/product.css">
 
-    <script src="https://kit.fontawesome.com/56087ce299.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="../image/logo.svg" type="image/x-icon">
-</head>
-<body>
+    <link rel="stylesheet" href="../css/grey_style_sheet.css" />
+    <link rel="stylesheet" href="../css/navigation.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/product.css" />
+
+    <script
+      src="https://kit.fontawesome.com/56087ce299.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="shortcut icon" href="../image/logo.svg" type="image/x-icon" />
+  </head>
+  <body>
     <div class="wrapper">
-        <header>
-            <div class="header-wrap">    
-                <a href="../../index.html" class="logo"> <img src="../image/logo.svg" alt="EyeCare"> </a>
-                <nav>
-                    <ul class="nav-links">
-                        <li><a href="../../index.html">Home</a></li>
-                        <li><a href="../pages/Product.html">Products</a></li>
-                        <li><a href="../pages/Customer-Service.html">Services</a></li>
-                    </ul>
-                </nav>
-                <div>
-                    <i class="fas fa-shopping-cart" onclick="location.href='../pages/Cart.html'"></i>
-                    <i class="fas fa-user" onclick="location.href='../pages/Account.html'"></a></i>
-                </div>
-            </div>
-        </header>
-        
-        <section class="product__nav">
-            <h1 class="product__title">Products</h1>
-        
-            <div class="product__categories">
-                <ul>
-                    <li id="filter-all" class="filter-btn" data-filter-type="category">All</li>
-                    <li id="filter-graded" class="filter-btn" data-filter-type="category">Graded</li>
-                    <li id="filter-photochromic" class="filter-btn" data-filter-type="category">Photochromic</li>
-                    <li id="filter-sunglasses" class="filter-btn" data-filter-type="category">Sunglasses</li>
-                </ul>
-            </div>
+      <header>
+        <div class="header-wrap">
+          <a href="../../index.html" class="logo">
+            <img src="../image/logo.svg" alt="EyeCare" />
+          </a>
+          <nav>
+            <ul class="nav-links">
+              <li><a href="../../index.html">Home</a></li>
+              <li><a href="../pages/Product.html">Products</a></li>
+              <li><a href="../pages/Customer-Service.html">Services</a></li>
+            </ul>
+          </nav>
+          <div>
+            <i
+              class="fas fa-shopping-cart"
+              onclick="location.href='../pages/Cart.html'"
+            ></i>
+            <i
+              class="fas fa-user"
+              onclick="location.href='../pages/Account.html'"
+            ></i>
+          </div>
+        </div>
+      </header>
 
-            <div class="product__search">
-                <div class="product__searchbar"> 
-                    <input type="search" placeholder="Search" ">
-                </div>
-                <div class="product__filter">
-                    <ul>
-                        <li id="filter-trending" class="filter-btn" data-filter-type="tag"><i class="fa-solid fa-star"></i> Trending</li>
-                        <li id="filter-featured" class="filter-btn" data-filter-type="tag"><i class="fa-solid fa-crown"></i> Featured</li>
-                        <li id="filter-latest" class="filter-btn" data-filter-type="tag"><i class="fa-solid fa-leaf"></i> Latest</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+      <section class="product__nav">
+        <h1 class="product__title">Products</h1>
 
-        <section class="product__catalog" id="catalog">
-            <div onclick="location.href='../pages/product_pages/product__aries_glasses.html'" class="catalog__card item photochromic latest trending">
-                <div class="card_picture">
-                    <img src="../image/look-1.png" alt="product">   
-                </div>
-                <div class="card_info">
-                    <h3>Aries </h3>
-                    <p>$49.99</p>
-                </div>
-            </div>
-            <div onclick="location.href='../pages/product_pages/product__pegasus_glasses.html'" class="catalog__card item graded latest trending">
-                <div class="card_picture">
-                    <img src="../image/look-2.png" alt="product">
-                </div>
-                <div class="card_info">
-                    <h3>Pegasus </h3>
-                    <p>$49.99</p>
-                </div>
-            </div>
-            <div onclick="location.href='../pages/product_pages/product__leo_glasses.html'" class="catalog__card item graded latest trending">
-                <div class="card_picture">
-                    <img src="../image/look-3.png" alt="product">
-                </div>
-                <div class="card_info">
-                    <h3>Leo </h3>
-                    <p>$59.99</p>
-                </div>
-            </div>
-            <div onclick="location.href='../pages/product_pages/product__orion_glasses.html'" class="catalog__card item photochromic featured">
-                <div class="card_picture">
-                    <img src="../image/look-4.png" alt="product">
-                </div>
-                <div class="card_info">
-                    <h3>Orion </h3>
-                    <p>$39.99</p>
-                </div>
-            </div>
-            <div onclick="location.href='../pages/product_pages/product__draco_glasses.html'" class="catalog__card item photochromic latest">
-                <div class="card_picture">
-                    <img src="../image/look-5.png" alt="product">
-                </div>
-                <div class="card_info">
-                    <h3>Draco </h3>
-                    <p>$39.99</p>
-                </div>
-            </div>
-            <div onclick="location.href='../pages/product_pages/product__cassiopeia_glasses.html'" class="catalog__card item photochromic trending">
-                <div class="card_picture">
-                    <img src="../image/look-6.png" alt="product">
-                </div>
-                <div class="card_info">
-                    <h3>Cassiopeia </h3>
-                    <p>$39.99</p>
-                </div>
-            </div>
-            <div onclick="location.href='../pages/product_pages/product__aquila_glasses.html'" class="catalog__card item photochromic featured">
-                <div class="card_picture">
-                    <img src="../image/look-7.png" alt="product">
-                </div>
-                <div class="card_info">
-                    <h3>Aquila </h3>
-                    <p>$45.99</p>
-                </div>
-            </div>
-            <div onclick="location.href='../pages/product_pages/product__lyra_glasses.html'" class="catalog__card item photochromic latest">
-                <div class="card_picture">
-                    <img src="../image/look-8.png" alt="product">
-                </div>
-                <div class="card_info">
-                    <h3>Lyra </h3>
-                    <p>$39.99</p>
-                </div>
-            </div>
-            <div onclick="location.href='../pages/product_pages/product__cygnus_glasses.html'" class="catalog__card item graded featured">
-                <div class="card_picture">
-                    <img src="../image/look-9.png" alt="product">
-                </div>
-                <div class="card_info">
-                    <h3>Cygnus </h3>
-                    <p>$45.99</p>
-                </div>
-            </div>
-            <div onclick="location.href='../pages/product_pages/product__cancer_glasses.html'" class="catalog__card item sunglasses latest featured">
-                <div class="card_picture">
-                    <img src="../image/look-10.png" alt="product">
-                </div>
-                <div class="card_info">
-                    <h3>Cancer </h3>
-                    <p>$39.99</p>
-                </div>
-            </div>
-            <div onclick="location.href='../pages/product_pages/product__monoceros_glasses.html'" class="catalog__card item photochromic latest">
-                <div class="card_picture">
-                    <img src="../image/look-11.png" alt="product">
-                </div>
-                <div class="card_info">
-                    <h3>Monoceros </h3>
-                    <p>$42.99</p>
-                </div>
-            </div>
-            <div onclick="location.href='../pages/product_pages/product__hydrus_glasses.html'" class="catalog__card item graded trending">
-                <div class="card_picture">
-                    <img src="../image/look-12.png" alt="product">
-                </div>
-                <div class="card_info">
-                    <h3>Hydrus </h3>
-                    <p>$59.99</p>
-                </div>
-            </div>
-            <div onclick="location.href='../pages/product_pages/product__volans_glasses.html'" class="catalog__card item graded featured">
-                <div class="card_picture">
-                    <img src="../image/look-13.png" alt="product">
-                </div>
-                <div class="card_info">
-                    <h3>Volans </h3>
-                    <p>$59.99</p>
-                </div>
-            </div>
-            <div onclick="location.href='../pages/product_pages/product__puppis_glasses.html'" class="catalog__card item sunglasses latest trending">
-                <div class="card_picture">
-                    <img src="../image/look-14.png" alt="product">
-                </div>
-                <div class="card_info">
-                    <h3>Puppis </h3>
-                    <p>$69.99</p>
-                </div>
-            </div>
-            <div onclick="location.href='../pages/product_pages/product__octans_glasses.html'" class="catalog__card item sunglasses featured">
-                <div class="card_picture">
-                    <img src="../image/look-15.png" alt="product">
-                </div>
-                <div class="card_info">
-                    <h3>Octans </h3>
-                    <p>$39.99</p>
-                </div>
-            </div>
-            <div onclick="location.href='../pages/product_pages/product__sextans_glasses.html'" class="catalog__card item sunglasses trending">
-                <div class="card_picture">
-                    <img src="../image/look-16.png" alt="product">
-                </div>
-                <div class="card_info">
-                    <h3>Sextans </h3> 
-                    <p>$49.99</p>
-                </div>
-            </div>
-            <div onclick="location.href='../pages/product_pages/product__sagittarius_glasses.html'" class="catalog__card item sunglasses latest">
-                <div class="card_picture">
-                    <img src="../image/look-17.png" alt="product">
-                </div>
-                <div class="card_info">
-                    <h3>Sagittarius </h3> 
-                    <p>$49.99</p>
-                </div>
-            </div>
-            <div onclick="location.href='../pages/product_pages/product__scorpius_glasses.html'" class="catalog__card item photochromic trending">
-                <div class="card_picture">
-                    <img src="../image/look-18.png" alt="product">
-                </div>
-                <div class="card_info">
-                    <h3>Scorpius </h3>
-                    <p>$49.99</p>
-                </div>
-            </div>
-            <div onclick="location.href='../pages/product_pages/product__capricornus_glasses.html'" class="catalog__card item sunglasses trending">
-                <div class="card_picture">
-                    <img src="../image/look-19.png" alt="product">
-                </div>
-                <div class="card_info">
-                    <h3>Capricornus </h3>
-                    <p>$49.99</p>
-                </div>
-            </div>
-            <div onclick="location.href='../pages/product_pages/product__aquarius_glasses.html'" class="catalog__card item sunglasses featured">
-                <div class="card_picture">
-                    <img src="../image/look-20.png" alt="product">
-                </div>
-                <div class="card_info">
-                    <h3>Aquarius </h3>
-                    <p>$39.99</p>
-                </div>
-            </div>
-        </section>
+        <div class="product__categories">
+          <ul>
+            <li id="filter-all" class="filter-btn" data-filter-type="category">
+              All
+            </li>
+            <li
+              id="filter-graded"
+              class="filter-btn"
+              data-filter-type="category"
+            >
+              Graded
+            </li>
+            <li
+              id="filter-photochromic"
+              class="filter-btn"
+              data-filter-type="category"
+            >
+              Photochromic
+            </li>
+            <li
+              id="filter-sunglasses"
+              class="filter-btn"
+              data-filter-type="category"
+            >
+              Sunglasses
+            </li>
+          </ul>
+        </div>
 
-        <section class="footer-wrap">
-            <section class="footer">
-                <div class="footer_split">
-                    <h1>EyeCare</h1>
-                </div>
-                <div class="footer_split">
-                    <ul>
-                        <h3>Customer Service</h3>
-                        <li><a href="../pages/Customer-Service.html#contact">Contact Us</a></li>
-                        <li><a href="../pages/Customer-Service.html">Help Center</a></li>
-                        <li><a href="../pages/Customer-Service.html#faqs">FAQS</a></li>
-                    </ul>
-                    <ul>
-                        <h3>About EyeCare</h3>
-                        <li><a href="../pages/Customer-Service.html#about">About Us</a></li>
-                        <li><a href="../pages/Customer-Service.html#policies">Policies</a></li>
-                        <li><a href="#" id="terms-link">Terms and Conditions</a></li>
-                    </ul>
-                </div>
-            </section>
-            <section class="copyright">
-                <p>© 2024 EYECARE PHILIPPINES&nbsp;|&nbsp;&nbsp;</p>
-                <p class="copyright-cont">+63 966 800 0626</p>
-            </section>
+        <div class="product__search">
+          <div class="product__searchbar">
+            <input type="search" placeholder="Search" ">
+          </div>
+          <div class="product__filter">
+            <ul>
+              <li
+                id="filter-trending"
+                class="filter-btn"
+                data-filter-type="tag"
+              >
+                Trending
+              </li>
+              <li
+                id="filter-featured"
+                class="filter-btn"
+                data-filter-type="tag"
+              >
+                Featured
+              </li>
+              <li id="filter-latest" class="filter-btn" data-filter-type="tag">
+                Latest
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="product__catalog" id="catalog">
+        <div
+          onclick="location.href='../pages/product_pages/product__aries_glasses.html'"
+          class="catalog__card item photochromic latest trending"
+        >
+          <div class="card_picture">
+            <img src="../image/look-1.png" alt="product" />
+          </div>
+          <div class="card_info">
+            <h3>Aries</h3>
+            <p>$49.99</p>
+          </div>
+        </div>
+        <div
+          onclick="location.href='../pages/product_pages/product__pegasus_glasses.html'"
+          class="catalog__card item graded latest trending"
+        >
+          <div class="card_picture">
+            <img src="../image/look-2.png" alt="product" />
+          </div>
+          <div class="card_info">
+            <h3>Pegasus</h3>
+            <p>$49.99</p>
+          </div>
+        </div>
+        <div
+          onclick="location.href='../pages/product_pages/product__leo_glasses.html'"
+          class="catalog__card item graded latest trending"
+        >
+          <div class="card_picture">
+            <img src="../image/look-3.png" alt="product" />
+          </div>
+          <div class="card_info">
+            <h3>Leo</h3>
+            <p>$59.99</p>
+          </div>
+        </div>
+        <div
+          onclick="location.href='../pages/product_pages/product__orion_glasses.html'"
+          class="catalog__card item photochromic featured"
+        >
+          <div class="card_picture">
+            <img src="../image/look-4.png" alt="product" />
+          </div>
+          <div class="card_info">
+            <h3>Orion</h3>
+            <p>$39.99</p>
+          </div>
+        </div>
+        <div
+          onclick="location.href='../pages/product_pages/product__draco_glasses.html'"
+          class="catalog__card item photochromic latest"
+        >
+          <div class="card_picture">
+            <img src="../image/look-5.png" alt="product" />
+          </div>
+          <div class="card_info">
+            <h3>Draco</h3>
+            <p>$39.99</p>
+          </div>
+        </div>
+        <div
+          onclick="location.href='../pages/product_pages/product__cassiopeia_glasses.html'"
+          class="catalog__card item photochromic trending"
+        >
+          <div class="card_picture">
+            <img src="../image/look-6.png" alt="product" />
+          </div>
+          <div class="card_info">
+            <h3>Cassiopeia</h3>
+            <p>$39.99</p>
+          </div>
+        </div>
+        <div
+          onclick="location.href='../pages/product_pages/product__aquila_glasses.html'"
+          class="catalog__card item photochromic featured"
+        >
+          <div class="card_picture">
+            <img src="../image/look-7.png" alt="product" />
+          </div>
+          <div class="card_info">
+            <h3>Aquila</h3>
+            <p>$45.99</p>
+          </div>
+        </div>
+        <div
+          onclick="location.href='../pages/product_pages/product__lyra_glasses.html'"
+          class="catalog__card item photochromic latest"
+        >
+          <div class="card_picture">
+            <img src="../image/look-8.png" alt="product" />
+          </div>
+          <div class="card_info">
+            <h3>Lyra</h3>
+            <p>$39.99</p>
+          </div>
+        </div>
+        <div
+          onclick="location.href='../pages/product_pages/product__cygnus_glasses.html'"
+          class="catalog__card item graded featured"
+        >
+          <div class="card_picture">
+            <img src="../image/look-9.png" alt="product" />
+          </div>
+          <div class="card_info">
+            <h3>Cygnus</h3>
+            <p>$45.99</p>
+          </div>
+        </div>
+        <div
+          onclick="location.href='../pages/product_pages/product__cancer_glasses.html'"
+          class="catalog__card item sunglasses latest featured"
+        >
+          <div class="card_picture">
+            <img src="../image/look-10.png" alt="product" />
+          </div>
+          <div class="card_info">
+            <h3>Cancer</h3>
+            <p>$39.99</p>
+          </div>
+        </div>
+        <div
+          onclick="location.href='../pages/product_pages/product__monoceros_glasses.html'"
+          class="catalog__card item photochromic latest"
+        >
+          <div class="card_picture">
+            <img src="../image/look-11.png" alt="product" />
+          </div>
+          <div class="card_info">
+            <h3>Monoceros</h3>
+            <p>$42.99</p>
+          </div>
+        </div>
+        <div
+          onclick="location.href='../pages/product_pages/product__hydrus_glasses.html'"
+          class="catalog__card item graded trending"
+        >
+          <div class="card_picture">
+            <img src="../image/look-12.png" alt="product" />
+          </div>
+          <div class="card_info">
+            <h3>Hydrus</h3>
+            <p>$59.99</p>
+          </div>
+        </div>
+        <div
+          onclick="location.href='../pages/product_pages/product__volans_glasses.html'"
+          class="catalog__card item graded featured"
+        >
+          <div class="card_picture">
+            <img src="../image/look-13.png" alt="product" />
+          </div>
+          <div class="card_info">
+            <h3>Volans</h3>
+            <p>$59.99</p>
+          </div>
+        </div>
+        <div
+          onclick="location.href='../pages/product_pages/product__puppis_glasses.html'"
+          class="catalog__card item sunglasses latest trending"
+        >
+          <div class="card_picture">
+            <img src="../image/look-14.png" alt="product" />
+          </div>
+          <div class="card_info">
+            <h3>Puppis</h3>
+            <p>$69.99</p>
+          </div>
+        </div>
+        <div
+          onclick="location.href='../pages/product_pages/product__octans_glasses.html'"
+          class="catalog__card item sunglasses featured"
+        >
+          <div class="card_picture">
+            <img src="../image/look-15.png" alt="product" />
+          </div>
+          <div class="card_info">
+            <h3>Octans</h3>
+            <p>$39.99</p>
+          </div>
+        </div>
+        <div
+          onclick="location.href='../pages/product_pages/product__sextans_glasses.html'"
+          class="catalog__card item sunglasses trending"
+        >
+          <div class="card_picture">
+            <img src="../image/look-16.png" alt="product" />
+          </div>
+          <div class="card_info">
+            <h3>Sextans</h3>
+            <p>$49.99</p>
+          </div>
+        </div>
+        <div
+          onclick="location.href='../pages/product_pages/product__sagittarius_glasses.html'"
+          class="catalog__card item sunglasses latest"
+        >
+          <div class="card_picture">
+            <img src="../image/look-17.png" alt="product" />
+          </div>
+          <div class="card_info">
+            <h3>Sagittarius</h3>
+            <p>$49.99</p>
+          </div>
+        </div>
+        <div
+          onclick="location.href='../pages/product_pages/product__scorpius_glasses.html'"
+          class="catalog__card item photochromic trending"
+        >
+          <div class="card_picture">
+            <img src="../image/look-18.png" alt="product" />
+          </div>
+          <div class="card_info">
+            <h3>Scorpius</h3>
+            <p>$49.99</p>
+          </div>
+        </div>
+        <div
+          onclick="location.href='../pages/product_pages/product__capricornus_glasses.html'"
+          class="catalog__card item sunglasses trending"
+        >
+          <div class="card_picture">
+            <img src="../image/look-19.png" alt="product" />
+          </div>
+          <div class="card_info">
+            <h3>Capricornus</h3>
+            <p>$49.99</p>
+          </div>
+        </div>
+        <div
+          onclick="location.href='../pages/product_pages/product__aquarius_glasses.html'"
+          class="catalog__card item sunglasses featured"
+        >
+          <div class="card_picture">
+            <img src="../image/look-20.png" alt="product" />
+          </div>
+          <div class="card_info">
+            <h3>Aquarius</h3>
+            <p>$39.99</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="footer-wrap">
+        <section class="footer">
+          <div class="footer_split">
+            <h1>EyeCare</h1>
+          </div>
+          <div class="footer_split">
+            <ul>
+              <h3>Customer Service</h3>
+              <li>
+                <a href="../pages/Customer-Service.html#contact">Contact Us</a>
+              </li>
+              <li><a href="../pages/Customer-Service.html">Help Center</a></li>
+              <li><a href="../pages/Customer-Service.html#faqs">FAQS</a></li>
+            </ul>
+            <ul>
+              <h3>About EyeCare</h3>
+              <li>
+                <a href="../pages/Customer-Service.html#about">About Us</a>
+              </li>
+              <li>
+                <a href="../pages/Customer-Service.html#policies">Policies</a>
+              </li>
+              <li><a href="#" id="terms-link">Terms and Conditions</a></li>
+            </ul>
+          </div>
         </section>
+        <section class="copyright">
+          <p>© 2024 EYECARE PHILIPPINES&nbsp;|&nbsp;&nbsp;</p>
+          <p class="copyright-cont">+63 966 800 0626</p>
+        </section>
+      </section>
     </div>
-    
+
     <script>
-        document.getElementById('terms-link').addEventListener('click', function() {
-            const link = document.createElement('a');
-            link.href = '../files/terms-and-conditions.txt';  // Update the path
-            link.download = 'terms-and-conditions.txt';
-            link.style.display = 'none';
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
+      document
+        .getElementById("terms-link")
+        .addEventListener("click", function () {
+          const link = document.createElement("a");
+          link.href = "../files/terms-and-conditions.pdf"; // Update the path
+          link.download = "terms-and-conditions.pdf";
+          link.style.display = "none";
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
         });
 
-        function addToCart(productName, price) {
-            var cart = JSON.parse(localStorage.getItem('cart')) || [];
-            var item = {
-                productName: productName,
-                price: price,
-                quantity: 1
-            };
-            cart.push(item);
-            localStorage.setItem('cart', JSON.stringify(cart));
-            alert('Item added to cart!');
-        }
+      function addToCart(productName, price) {
+        var cart = JSON.parse(localStorage.getItem("cart")) || [];
+        var item = {
+          productName: productName,
+          price: price,
+          quantity: 1,
+        };
+        cart.push(item);
+        localStorage.setItem("cart", JSON.stringify(cart));
+        alert("Item added to cart!");
+      }
     </script>
 
     <script src="../js/filter.js"></script>
-
-</body>
+  </body>
 </html>

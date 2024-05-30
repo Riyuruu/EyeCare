@@ -78,7 +78,7 @@
                     <a href="Account.html" class="button">Change Password</a>
                     <a href="Account.html" class="button delete">Delete Account</a>
                     <a href="../pages/Support.html" class="button">Contact Support</a>
-                    <a href="../files/terms-and-conditions.txt" download="terms-and-conditions.txt" class="button">Terms and Conditions</a>
+                    <a href="../files/terms-and-conditions.pdf" download="terms-and-conditions.pdf" class="button">Terms and Conditions</a>
                 </div>
                 <div class="account-section saved-addresses section">
                     <h2>Saved Addresses</h2>
@@ -133,8 +133,8 @@
     <script>
         document.getElementById('terms-link').addEventListener('click', function() {
             const link = document.createElement('a');
-            link.href = '../files/terms-and-conditions.txt';
-            link.download = 'terms-and-conditions.txt';
+            link.href = '../files/terms-and-conditions.pdf';
+            link.download = 'terms-and-conditions.pdf';
             link.style.display = 'none';
             document.body.appendChild(link);
             link.click();

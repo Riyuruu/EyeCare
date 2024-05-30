@@ -1,85 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EyeCare | Login</title>
-  <link rel="stylesheet" href="../css/login.css">
-  <link rel="stylesheet" href="../css/grey_style_sheet.css">
-</head>
-<body>
-  <div class="container">
-    <div class="form-container sign-in-container">
-      <form action="#">
-        <h1 class="form-title">Sign in</h1>
-        <span class="form-subtitle">or use your account</span>
-        <div class="input_fields">
-          <input type="email" placeholder="Email" required/>
-          <input type="password" placeholder="Password" required/>
-          <a href="#">Forgot your password?</a>
-        </div>
-        <button type="submit" id="submit_signin" disabled>Sign In</button>
-      </form>
-    </div>
-    <div class="overlay-container">
-      <div class="overlay">
-        <div class="overlay-panel overlay-right">
-          <h1>Hello, Friend!</h1>
-          <p>Enter your personal details and start journey with us</p>
-          <button class="ghost" id="signUp" onclick="location.href='signup.html'">Sign Up</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EyeCare | Login</title>
+    <link rel="stylesheet" href="../css/login.css" />
+    <link rel="stylesheet" href="../css/grey_style_sheet.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-container sign-in-container">
+        <form id="signin_form">
+            <h1 class="form-title">Sign in</h1>
+            <span class="form-subtitle">or use your account</span>
+            <div class="input_fields">
+                <input type="email" id="email" placeholder="Email" required/>
+                <input type="password" id="password" placeholder="Password" required/>
+                <a href="#">Forgot your password?</a>
+            </div>
+            <button type="submit" id="submit_signin">Sign In</button>
+        </form>
+      </div>
+      <div class="overlay-container">
+        <div class="overlay">
+          <div class="overlay-panel overlay-right">
+            <h1>Hello, Friend!</h1>
+            <p>Enter your personal details and start journey with us</p>
+            <button
+              class="ghost"
+              id="signUp"
+            >
+              Sign Up
+            </button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <script>
-    const signUpButton = document.getElementById('signUp');
-    const signInButton = document.getElementById('signIn');
-    const container = document.querySelector('.container');
-
-    signUpButton.addEventListener('click', () => {
-      container.classList.add('right-panel-active');
-    });
-
-    signInButton.addEventListener('click', () => {
-      container.classList.remove('right-panel-active');
-    });
-
-    // Select the sign-in form and submit button
-    const signin_form = document.querySelector('.form-container');
-    const signin_Button = document.getElementById('submit_signin');
-
-    // Select all required input fields
-    const inputs = signin_form.querySelectorAll('input[required]');
-
-    function validateForm() {
-      let isValid = true;
-      for (const input of inputs) {
-        if (input.value.trim() === '') {
-          isValid = false;
-          break; // Stop checking if one field is empty
-        }
-      }
-      return isValid;
-    }
-
-    // Add event listener to the sign-in form submission
-    signin_form.addEventListener('submit', (event) => {
-      event.preventDefault(); // Prevent default form submission
-
-      if (validateForm()) {
-        alert("You are logged in!");
-        
-      } else {
-        alert("Please fill in all required fields.");
-      }
-    });
-
-    // Add event listener to each input field (optional, for immediate feedback)
-    inputs.forEach(input => {
-      input.addEventListener('change', () => {
-        signin_Button.disabled = !validateForm();
+    <script>
+      const signInButton = document.getElementById("signIn");
+      const signUpButton = document.getElementById("signUp");
+      
+      signUpButton.addEventListener("click", () => {
+        document.head.innerHTML = 
+        `
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>EyeCare | Sign Up</title>
+        <link rel="stylesheet" href="../css/signup.css" />
+        <link rel="stylesheet" href="../css/grey_style_sheet.css" />
+        `;
+        document.body.innerHTML =
+        `
+        <div class="container">
+          <div class="form-container sign-up-container">
+              <form id="signup_form">
+                  <h1 class="form-title">Create Account</h1>
+                  <span class="form-subtitle">or use your email for registration</span>
+                  <div class="input_fields">
+                      <input type="text" id="name_signup" placeholder="Name" required />
+                      <input type="email" id="email_signup" placeholder="Email" required />
+                      <input type="password" id="password_signup" placeholder="Password" required />
+                  </div>
+                  <button type="submit" id="submit_signup">Sign Up</button>
+              </form>
+          </div>
+          <div class="overlay-container">
+            <div class="overlay">
+              <div class="overlay-panel overlay-right">
+                <h1>Welcome Back!</h1>
+                <p>
+                  To keep connected with us please login with your personal info
+                </p>
+                <button
+                  class="ghost"
+                  id="signIn"
+                  onclick="location.href='login.html'"
+                >
+                  Sign In
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        `;
       });
-    });
-  </script>
-</body>
+
+      // Sign In Form Validation
+      document.getElementById('signin_form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting the default way
+            validateForm();
+        });
+
+        function validateForm() {
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+
+            if (email === "" || password === "") {
+                alert("Both email and password must be filled out");
+                return false;
+            } else {
+                window.location.href = "../../index.html"; // Redirect to index.html if validation passes
+            }
+        }
+      
+      // Sign Up Form Validation
+      document.getElementById('signup_form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting the default way
+            validateSignUpForm();
+        });
+
+        function validateSignUpForm() {
+            var name = document.getElementById("name_signup").value;
+            var email = document.getElementById("email_signup").value;
+            var password = document.getElementById("password_signup").value;
+
+            if (name === "" || email === "" || password === "") {
+                alert("All fields must be filled out");
+                return false;
+            } else {
+                window.location.href = "login.html"; // Redirect to index.html if validation passes
+            }
+        }
+      
+    </script>
+  </body>
 </html>
