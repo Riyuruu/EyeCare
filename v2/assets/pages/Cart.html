@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EyeWear | Cart</title>
+    
+    <link rel="stylesheet" href="../css/grey_style_sheet.css">
+    <link rel="stylesheet" href="../css/navigation.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/Cart.css">
+    <link rel="shortcut icon" href="../image/logo.svg" type="image/x-icon">
+    
+    <script src="https://kit.fontawesome.com/56087ce299.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Header -->
+        <header>
+            <div class="header-wrap">    
+                <a href="../../index.html" class="logo"> <img src="../image/logo.svg" alt="EyeWear"> </a>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="../pages/Product.html">Products</a></li>
+                        <li><a href="../pages/Customer-Service.html">Services</a></li>
+                    </ul>
+                </nav>
+                <div class="user-icons">
+                    <i class="fas fa-shopping-cart" onclick="location.href='../pages/Cart.html'"></i>
+                    <i class="fas fa-user" onclick="location.href='../pages/Account.html'"></i>
+                </div>
+            </div>
+        </header>
+
+       
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Cart Section -->
+            <section class="cart">
+                <div class="cart-item">
+                    <img src="../image/product-image.jpg" alt="Product">
+                    <div class="product-details">
+                        <h3>Classic Aviator Sunglasses</h3>
+                        <p class="price">$75.00</p>
+                    </div>
+                    <div class="quantity-selector">
+                        <button class="quantity-btn minus-btn" onclick="decreaseQuantity(this)">-</button>
+                        <input type="number" class="quantity-input" value="1">
+                        <button class="quantity-btn plus-btn" onclick="increaseQuantity(this)">+</button>
+                    </div>
+                    <p class="total-price">$75.00</p>
+                    <button class="remove-btn" title="Remove"><i class="fas fa-trash-alt"></i></button>
+                </div>
+
+                <div class="cart-item">
+                    <img src="../image/product-image.jpg" alt="Product">
+                    <div class="product-details">
+                        <h3>Retro Round Glasses</h3>
+                        <p class="price">$65.00</p>
+                    </div>
+                    <div class="quantity-selector">
+                        <button class="quantity-btn minus-btn" onclick="decreaseQuantity(this)">-</button>
+                        <input type="number" class="quantity-input" value="1">
+                        <button class="quantity-btn plus-btn" onclick="increaseQuantity(this)">+</button>
+                    </div>
+                    <p class="total-price">$65.00</p>
+                    <button class="remove-btn" title="Remove"><i class="fas fa-trash-alt"></i></button>
+                </div>
+            </section>
+
+            <!-- Summary Section -->
+            <aside class="summary">
+                <h2>Order Summary</h2>
+                <div class="summary-details">
+                    <div class="subtotal">
+                        <span>Subtotal</span>
+                        <span class="subtotal-amount">$140.00</span>
+                    </div>
+                    <div class="discount">
+                        <input type="text" placeholder="Discount Code">
+                        <button class="apply-btn" onclick="location.href='Cart.html'">Apply</button>
+                    </div>
+                    <div class="total">
+                        <span>Total</span>
+                        <span class="total-amount">$140.00</span>
+                    </div>
+                    <button class="checkout-btn" onclick="location.href='Cart.html'">Proceed to Checkout</button>
+                </div>
+            </aside>
+        </main>
+
+        <!-- Footer -->
+        <section class="footer-wrap">
+            <section class="footer">
+                <div class="footer_split">
+                    <h1>EyeCare</h1>
+                </div>
+                <div class="footer_split">
+                    <ul>
+                        <h3>Customer Service</h3>
+                        <li><a href="../pages/Customer-Service.html#contact">Contact Us</a></li>
+                        <li><a href="../pages/Customer-Service.html">Help Center</a></li>
+                        <li><a href="../pages/Customer-Service.html#faqs">FAQS</a></li>
+                    </ul>
+                    <ul>
+                        <h3>About EyeCare</h3>
+                        <li><a href="../pages/Customer-Service.html#about">About Us</a></li>
+                        <li><a href="../pages/Customer-Service.html#policies">Policies</a></li>
+                        <li><a href="#" id="terms-link">Terms and Conditions</a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="copyright">
+                <p>© 2024 EYECARE PHILIPPINES&nbsp;|&nbsp;&nbsp;</p>
+                <p class="copyright-cont">+63 966 800 0626</p>
+            </section>
+        </section>
+    </div>
+
+    <!-- JavaScript for Quantity Adjustment and Total Calculation -->
+    <script>
+        function updateCartTotal() {
+            var cartItems = document.querySelectorAll('.cart-item');
+            var subtotal = 0;
+
+            cartItems.forEach(function(cartItem) {
+                var price = parseFloat(cartItem.querySelector('.price').innerText.replace('$', ''));
+                var quantity = parseInt(cartItem.querySelector('.quantity-input').value);
+                var totalPrice = price * quantity;
+                cartItem.querySelector('.total-price').innerText = '$' + totalPrice.toFixed(2);
+                subtotal += totalPrice;
+            });
+
+            document.querySelector('.subtotal-amount').innerText = '$' + subtotal.toFixed(2);
+            document.querySelector('.total-amount').innerText = '$' + subtotal.toFixed(2);
+        }
+
+        function increaseQuantity(input) {
+            var quantityInput = input.previousElementSibling;
+            var currentValue = parseInt(quantityInput.value);
+            var newValue = currentValue + 1;
+            quantityInput.value = newValue;
+            updateCartTotal();
+        }
+
+        function decreaseQuantity(input) {
+            var quantityInput = input.nextElementSibling;
+            var currentValue = parseInt(quantityInput.value);
+            var newValue = currentValue - 1;
+            if (newValue >= 1) {
+                quantityInput.value = newValue;
+                updateCartTotal();
+            }
+        }
+
+        // Update totals on page load
+        updateCartTotal();
+
+    </script>
+
+    
+    <script>
+        document.getElementById('terms-link').addEventListener('click', function() {
+            const link = document.createElement('a');
+            link.href = '../files/terms-and-conditions.pdf';  // Update the path
+            link.download = 'terms-and-conditions.pdf';
+            link.style.display = 'none';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        });
+    </script>
+    
+</body>
+</html>
