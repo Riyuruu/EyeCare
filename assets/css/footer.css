@@ -1,7 +1,7 @@
 .footer_wrapper {
     display: flex;
     flex-direction: column;
-
+background-color: var(--secondary-color);
     position: absolute;
     bottom: 0;
 }

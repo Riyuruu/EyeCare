@@ -239,7 +239,7 @@ input[type="text"]:focus, input[type="email"]:focus {
 }
 
 button {
-    background-color: #007bff;
+    background-color: var(--tertiary-color);
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -250,7 +250,7 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: var(--secondary-light-color);
 }
 
 /* CSS for checkout button enhancements */
@@ -267,7 +267,7 @@ button:hover {
 }
 
 .checkout:hover {
-    background-color: #218838;
+    background-color: var(--secondary-light-color);
 }
 
 
@@ -319,7 +319,8 @@ button:hover {
 }
 
 .payment-options label.active {
-    border-color: #007bff;
+    border-color: #e02323;
+    border: solid 1px;
 }
 
 .payment-options label img {
@@ -333,7 +334,7 @@ button:hover {
 
 /* Styling for checkout button */
 .checkout {
-    background-color: #007bff;
+    background-color: var(--tertiary-color);
     color: white;
     padding: 10px 20px;
     border: none;
@@ -348,7 +349,7 @@ button:hover {
 }
 
 .checkout:hover:not(.disabled) {
-    background-color: #0056b3;
+    background-color: var(--secondary-light-color);
 }
 .promo-code {
     margin-top: 20px;
@@ -368,7 +369,8 @@ button:hover {
 }
 
 .promo-code button {
-    background-color: #007bff;
+    background-color: var(--tertiary-color);
+    margin-top: 15px;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -379,7 +381,7 @@ button:hover {
 }
 
 .promo-code button:hover {
-    background-color: #0056b3;
+    background-color: var(--secondary-light-color);
 }
 
 
