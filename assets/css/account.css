@@ -102,11 +102,11 @@ body {
 }
 
 .delete {
-    background-color: #E91E63;
+    background-color: var(--secondary-light-color);
 }
 
 .delete:hover {
-    background-color: #F06292;
+    background-color: var(--secondary-lighter-color);
 }
 
 .order {
@@ -126,11 +126,17 @@ body {
 }
 
 .order-img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
+    width: 150px;
+    height: 150px;
     border-radius: 12px;
     margin-right: 20px;
+}
+
+.order-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-block: 20%;
 }
 
 .order-details {
@@ -181,30 +187,18 @@ body {
 }
 
 .profile-photo {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%; /* This makes the photo circular */
     object-fit: cover;
-    margin-bottom: 15px;
-}
-
-.change-photo {
-    display: inline-block;
-    padding: 8px;
-    background-color: #ffffff;
-    border: 2px solid #504170;
-    border-radius: 50%;
-    margin-top: 10px;
+    margin-block: 1rem;
+    margin-inline: auto;
     cursor: pointer;
+    position: relative;
+    transition: opacity 0.3s ease, scale 0.3s ease;
 }
 
-.change-photo i {
-    color: #504170;
-    font-size: 1.2rem;
+.profile-photo:hover {
+    opacity: 0.8;
+    scale: 1.05;
 }
-
-.change-photo:hover {
-    background-color: #504170;
-    color: #ffffff;
-}
-

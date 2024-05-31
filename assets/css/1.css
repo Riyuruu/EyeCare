@@ -51,13 +51,20 @@ body {
     padding: 10px 0;
 }
 
-.cart-item img {
-    width: 100px;
-    height: 100px;
+.cart-item-image {
+    width: 150px;
+    height: 150px;
     object-fit: cover;
     border-radius: 4px;
     margin-right: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-block: 20%;
 }
 
 .cart-item-details {
@@ -135,12 +142,12 @@ body {
 
 .payment-options label i {
     font-size: 36px;
-    color: #666;
+    color: #504170;
     transition: color 0.3s ease;
 }
 
 .payment-options label:hover i {
-    color: #007bff;
+    color: rgb(44, 44, 44);
 }
 
 .payment-options label span {
