@@ -73,6 +73,12 @@ background-color: var(--secondary-color);
     translate: 0 -0.1px;
 }
 
+.footer_icons {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
 .copyright {
     display: flex;
     font-size: 0.8rem;
@@ -102,5 +108,28 @@ background-color: var(--secondary-color);
         align-items: center;
         gap: 5rem;
     }
+
+    .footer_split {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .footer_icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
     
+    .copyright {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
 }
