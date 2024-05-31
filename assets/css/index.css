@@ -134,6 +134,28 @@ button {
     background-color: var(--tertiary-color);
 }
 
+.split-item {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+.split-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+
+  .split-item img.active {
+    opacity: 1;
+  }
+
 .split-item h2 {
     font-size: 4rem;    
     font-family: var(--title-font);

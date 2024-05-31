@@ -68,7 +68,9 @@
           </button>
         </div>
         <div class="split-item">
-          <h2>Where Fashion,<br />Meets Function.</h2>
+          <img src="assets/image/gallery-1.png" alt="" class="active">
+          <img src="assets/image/gallery-2.jpg" alt="Gallery Image 2">
+          <img src="assets/image/gallery-3.png" alt="Gallery Image 3">
         </div>
       </section>
       <section class="look">
@@ -304,6 +306,20 @@
           link.click();
           document.body.removeChild(link);
         });
+
+        document.addEventListener("DOMContentLoaded", function() {
+        const images = document.querySelectorAll('.split-item img');
+        let currentImageIndex = 0;
+        const intervalTime = 3000; // Change image every 3 seconds
+
+        function changeImage() {
+          images[currentImageIndex].classList.remove('active');
+          currentImageIndex = (currentImageIndex + 1) % images.length;
+          images[currentImageIndex].classList.add('active');
+        }
+
+        setInterval(changeImage, intervalTime);
+      });
     </script>
     <!-- Add Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
